@@ -10,7 +10,7 @@
         width: 100%;
         min-height: 100%;
         font-family: "Lato", sans-serif;
-        font-size: 2.5em;
+        font-size: 2em;
       }
       html * {
         box-sizing: border-box; 
@@ -22,14 +22,19 @@
         margin: 0;
         padding: 0;
       }
+      header {
+        width: 100%;
+        background-color: white;
+
+      }
       .pretty-background {
         background-image: url("https://images.pexels.com/photos/633850/machine-mill-industry-steam-633850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
         background-position: center;
         background-size: cover;
-        position: fixed;
+        position: absolute;
         top: 0;
-        right: 0;
         left: 0;
+        right: 0;
         bottom: 0;
         z-index: -1;
         opacity: 0.5;
@@ -38,6 +43,7 @@
         width: 100%;
         min-height: 100%;
         padding: 40px;
+        position: relative;
       }
 			iframe {
 				width: 100%;
@@ -51,11 +57,11 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        margin-top: 16px;
+        margin-top: 1em;
 			}
 
       .contact-container .card {
-        padding: 16px;
+        padding: 1em;
         padding-top: 0;
       }
 
@@ -82,7 +88,7 @@
         }
 
         .card:not(:last-child) {
-          margin-right: 16px;
+          margin-right: 1em;
         }
       }
     </style>
@@ -101,11 +107,15 @@
   </head>
 
   <body>
-    <div class="pretty-background"></div>
+    <header><img alt="Bio 4 plas" src="./bio4plas.png" style="height:64px; margin: 32px;" /></header>
+    
     <div class="content">
-      <h1 style="color: #c55a11; text-align: center;">Bio4Plas</h1>
-      
+        <h2 style="margin-left: 0;margin-top: 0px;">
+          <i class="fas fa-address-book" style="color: #c55a11;"></i>
+          Contactos
+        </h2>
       <div class="contact-container">
+        <div class="pretty-background"></div>
         <div class="card">
             <h3>
               <i class="fas fa-user"></i>
@@ -171,16 +181,14 @@
             </address>
         </div>
       </div>
-
-
-    	<div class="card">
-          <h3 style="margin-left: 16px">
-            <i class="fas fa-location-arrow"></i>
-            Localização
-          </h3>
-          <p style="margin-left: 16px;margin-top: 0px; margin-right: 16px">Zona Industrial de Cantanhede, Lote 61</br>Apartado 230</br>3064-909 CANTANHEDE</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1912.032581636078!2d-8.611836541713071!3d40.358968194842994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23ac540329fb33%3A0x417488c5fdfad502!2s3060-197%20Cantanhede%2C%20Portugal!5e1!3m2!1sen!2spt!4v1589226081007!5m2!1sen!2spt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			<div/>
     </div>
+    <footer>
+      <h2 style="margin-left: 16px">
+        <i class="fas fa-location-arrow" style="color: #c55a11;"></i>
+        Localização
+      </h2>
+      <p style="margin-left: 16px;margin-top: 0px; margin-right: 16px">Zona Industrial de Cantanhede, Lote 61</br>Apartado 230</br>3064-909 CANTANHEDE</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1912.032581636078!2d-8.611836541713071!3d40.358968194842994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23ac540329fb33%3A0x417488c5fdfad502!2s3060-197%20Cantanhede%2C%20Portugal!5e1!3m2!1sen!2spt!4v1589226081007!5m2!1sen!2spt" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </footer>
   </body>
 </html>
