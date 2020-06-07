@@ -1,0 +1,10 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bio4Plas</title>
+    <meta name="description" content="Bio4Plas Plasticos amigos do ambiente" />
+    <meta name="keywords" content="Bio4Plas plasticos canhamo ambiente" />
+    {{ $sass := resources.Get "bulma/bulma.sass" }}
+    {{ $style := $sass | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ template "_internal/google_analytics_async.html" . }}
+</head>

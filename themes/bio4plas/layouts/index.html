@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head" . }}
+  <body>
+    {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+    {{ block "main" . }}
+      {{ block "product" . }}
+        {{ partial "product.html" . }}
+      {{ end }}
+      {{ block "aboutUs" . }}
+        {{ partial "aboutUs.html" . }}
+      {{ end }}
+      {{ block "contacts" . }}
+        {{ partial "contacts.html" . }}
+      {{ end }}
+      {{ block "location" . }}
+        {{ partial "location.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ end }}
+    <script
+      src="https://kit.fontawesome.com/6a1629e17e.js"
+      crossorigin="anonymous"
+      async
+      defer
+    ></script>
+    <script async defer src="{{ $.Site.BaseURL }}js/hamburger.js"></script>
+  </body>
+</html>

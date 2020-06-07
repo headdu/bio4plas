@@ -1,0 +1,57 @@
+baseURL = "http://bio4plas.com/"
+DefaultContentLanguage = "en"
+title = "Bio4Plas"
+theme = "bio4plas"
+
+[languages]
+    [languages.pt]
+        title="Bio4Plaspt"
+        [languages.pt.menu]
+            [[languages.pt.menu.main]]
+                identifier = "aboutUs"
+                name = "Quem Somos"
+                url = "#aboutUs"
+                weight = 1
+            [[languages.pt.menu.main]]
+                identifier = "contacts"
+                name = "Contactos"
+                url = "#contacts"
+                weight = 2
+            [[languages.pt.menu.main]]
+                identifier = "location"
+                name = "Localização"
+                url = "#location"
+                weight = 3
+        [languages.pt.params]
+            description = "Biopolímeros Biológicos"
+            language = "Linguagem"
+    [languages.en]
+        title="Bio4Plasen"
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                identifier = "aboutUs"
+                name = "About Us"
+                url = "#aboutUs"
+                weight = 1
+            [[languages.en.menu.main]]
+                identifier = "contacts"
+                name = "Contacts"
+                url = "#contacts"
+                weight = 2
+            [[languages.en.menu.main]]
+                identifier = "location"
+                name = "Location"
+                url = "#location"
+                weight = 3
+        [languages.en.params]
+            description = "Biological Biopolymers"
+            language = "Language"
+
+googleAnalytics = "UA-168780457-1"
+
+[privacy]
+    [privacy.googleAnalytics]
+        anonymizeIp = true
+        disable = false
+        respectDoNotTrack = true
+        useSessionStorage = true

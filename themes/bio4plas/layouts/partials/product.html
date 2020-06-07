@@ -1,0 +1,25 @@
+<section class="hero has-background-primary">
+    <div class="hero-body level">
+        <div class="level-left column">
+            <div class="container">
+                <h1 class="title has-text-white-bis">Bio4Plas</h1>
+                <h2 class="subtitle has-text-white-bis">
+                    {{ .Param "description" }}
+                </h2>
+            </div>
+        </div>
+        <div class="level-right column is-two-thirds is-flex is-centered">
+            <video class="level-item is-half" style="border-radius: 6px;" loop autoplay>
+                {{ $webmVid := resources.Get "bio4plas-video.webm" }}
+                {{ $mp4Vid := resources.Get "bio4plas-video.mp4" }}
+                <source src="{{ $webmVid.Permalink }}"
+                        type="video/webm">
+            
+                <source src="{{ $mp4Vid.Permalink }}"
+                        type="video/mp4">
+            
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+        </div>
+    </div>
+</section>
