@@ -1,4 +1,4 @@
-baseURL = "http://bio4plas.com/"
+baseURL = "https://bio4plas.com/"
 DefaultContentLanguage = "en"
 title = "Bio4Plas"
 theme = "bio4plas"
