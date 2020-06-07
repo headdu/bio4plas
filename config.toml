@@ -2,6 +2,7 @@ baseURL = "http://bio4plas.com/"
 DefaultContentLanguage = "en"
 title = "Bio4Plas"
 theme = "bio4plas"
+relativeURLs = true
 
 [languages]
     [languages.pt]

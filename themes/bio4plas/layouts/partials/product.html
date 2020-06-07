@@ -12,10 +12,10 @@
             <video class="level-item is-half" style="border-radius: 6px;" loop autoplay>
                 {{ $webmVid := resources.Get "bio4plas-video.webm" }}
                 {{ $mp4Vid := resources.Get "bio4plas-video.mp4" }}
-                <source src="{{ $webmVid.Permalink }}"
+                <source src="{{ $webmVid.RelPermalink }}"
                         type="video/webm">
             
-                <source src="{{ $mp4Vid.Permalink }}"
+                <source src="{{ $mp4Vid.RelPermalink }}"
                         type="video/mp4">
             
                 Sorry, your browser doesn't support embedded videos.
