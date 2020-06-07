@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="level-right column is-two-thirds is-flex is-centered">
-            <video class="level-item is-half" style="border-radius: 6px;" loop autoplay>
+            <video class="level-item is-half" style="border-radius: 6px;" loop="true" autoplay="true" controls >
                 {{ $webmVid := resources.Get "bio4plas-video.webm" }}
                 {{ $mp4Vid := resources.Get "bio4plas-video.mp4" }}
                 <source src="{{ $webmVid.RelPermalink }}"

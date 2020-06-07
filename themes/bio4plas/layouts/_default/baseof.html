@@ -1,1 +1,42 @@
-{{ template "_internal/google_analytics_async.html" . }}
+<!DOCTYPE html>
+<html>
+  {{ partial "head" . }}
+  <body>
+    {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+    {{ block "main" . }}
+      {{ block "product" . }}
+        {{ partial "product.html" . }}
+      {{ end }}
+      {{ block "aboutUs" . }}
+        {{ partial "aboutUs.html" . }}
+      {{ end }}
+      {{ block "contacts" . }}
+        {{ partial "contacts.html" . }}
+      {{ end }}
+      {{ block "location" . }}
+        {{ partial "location.html" . }}
+      {{ end }}
+    {{ end }}
+    {{ block "footer" . }}
+    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
+    {{ end }}
+    <article id="cookie-message" class="message is-marginless is-info is-hidden" style="position: fixed; bottom: 0; left:0; right: 0;">
+      <div class="message-header">
+        <p>{{ .Param "privacyMessage" }}<a href="./privacypolicy">{{ .Param "privacyMessageAccent" }}</a></p>
+        <button id="cookie-close" class="delete" aria-label="delete"></button>
+      </div>
+    </article>
+    <script
+      src="https://kit.fontawesome.com/6a1629e17e.js"
+      crossorigin="anonymous"
+      async
+      defer
+    ></script>
+    {{ $hamburgerJs := resources.Get "js/hamburger.js" }}
+    {{ $minifiedHamburger := $hamburgerJs | resources.Minify }}
+    {{ $cookieJs := resources.Get "js/cookieConsent.js" }}
+    {{ $minifiedCookie := $cookieJs | resources.Minify }}
+    <script async defer src="{{ $minifiedHamburger.RelPermalink }}"></script>
+    <script async defer src="{{ $minifiedCookie.RelPermalink }}"></script>
+  </body>
+</html>

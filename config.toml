@@ -13,42 +13,46 @@ googleAnalytics = "UA-168780457-1"
             [[languages.pt.menu.main]]
                 identifier = "aboutUs"
                 name = "Quem Somos"
-                url = "#aboutUs"
+                url = "/pt/#aboutUs"
                 weight = 1
             [[languages.pt.menu.main]]
                 identifier = "contacts"
                 name = "Contactos"
-                url = "#contacts"
+                url = "/pt/#contacts"
                 weight = 2
             [[languages.pt.menu.main]]
                 identifier = "location"
                 name = "Localização"
-                url = "#location"
+                url = "/pt/#location"
                 weight = 3
         [languages.pt.params]
             description = "Biopolímeros Biológicos"
             language = "Linguagem"
+            privacyMessage = "Este website usa cookies para garantir um bom funcionamento. Para mais informações leia a nossa "
+            privacyMessageAccent = "politica de privacidade"
     [languages.en]
         title="Bio4Plasen"
         [languages.en.menu]
             [[languages.en.menu.main]]
                 identifier = "aboutUs"
                 name = "About Us"
-                url = "#aboutUs"
+                url = "/#aboutUs"
                 weight = 1
             [[languages.en.menu.main]]
                 identifier = "contacts"
                 name = "Contacts"
-                url = "#contacts"
+                url = "/#contacts"
                 weight = 2
             [[languages.en.menu.main]]
                 identifier = "location"
                 name = "Location"
-                url = "#location"
+                url = "/#location"
                 weight = 3
         [languages.en.params]
             description = "Biological Biopolymers"
             language = "Language"
+            privacyMessage = "This website uses cookies to function. For more information refer to our  "
+            privacyMessageAccent = "privacy policy"
 
 [privacy]
     [privacy.googleAnalytics]
