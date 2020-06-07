@@ -3,6 +3,8 @@ DefaultContentLanguage = "en"
 title = "Bio4Plas"
 theme = "bio4plas"
 relativeURLs = true
+enableRobotsTXT = true
+googleAnalytics = "UA-168780457-1"
 
 [languages]
     [languages.pt]
@@ -47,8 +49,6 @@ relativeURLs = true
         [languages.en.params]
             description = "Biological Biopolymers"
             language = "Language"
-
-googleAnalytics = "UA-168780457-1"
 
 [privacy]
     [privacy.googleAnalytics]
