@@ -9,7 +9,7 @@
                 <div class ="tile is-parent">
                     <div class="tile is-child box">
                         <h2 class="title is-5">
-                            <i class="fas fa-user">
+                            <i class="fas fa-user" style="margin-right: 4px;">
                             </i>
                             {{  .Title }}
                         </h2>
@@ -18,13 +18,13 @@
                         </h3>
                         <address>
                             <p style="margin-top:0">
-                                <i class="fas fa-envelope"></i>
+                                <i class="fas fa-envelope" style="margin-right: 4px;"></i>
                                 <a href="mailto:{{ .Params.email }}">
                                     {{ .Params.email }}
                                 </a>
                             </p>
                             <p>
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone" style="margin-right: 4px;"></i>
                                 {{ $clearPhone := replace .Params.phone " " "" }}
                                 <a href="tel:{{ $clearPhone }}">
                                     {{ .Params.phone }}
